@@ -40,6 +40,6 @@
         }
         //echo $password;
         //echo $password_inp;
-        header('Location: index.php');
+        //header('Location: index.php');
     }
 ?>

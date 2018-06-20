@@ -1,4 +1,22 @@
 <?php
-	include_once('router.php');
+    /*
+    При входе на сайт, пользователь стартует новую сессию.
+    При этом, в параметре user массива session хранится имя пользвателя.
+    */
+   session_start();
+	/*echo '<pre>';
+		print_r($_SESSION);
+	echo '</pre>';*/
+	if (isset($_SESSION['user_name'])){
+        $user_name = $_SESSION['user_name'];
+        echo "Hello $user_name";
+        echo '<button id="exit">exit</button>';
+    }
+    else{
+        /*echo '<pre>';
+        	print_r($_SESSION);
+        echo '</pre>';*/
+        require_once('autorization.php');
+    }
 	
 ?>
