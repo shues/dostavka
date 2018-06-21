@@ -22,3 +22,24 @@ input{
     margin-top: 10px;
     /*margin-left: 40%;*/
 }
+
+#user_cont_box{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.main_menu{
+    background-color: aquamarine;
+    height: 300px;
+    margin-top: 20px;
+    display: inline-block;
+    width: 10%;
+}
+
+.main_menu_item{
+    background-color: aqua;
+    height: 100px;
+    line-height: 100px;
+    bottom: 10px;
+}

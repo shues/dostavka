@@ -10,11 +10,17 @@
         $password_inp = $_GET['password_str'];
         $query = "
             SELECT 
-                `name`, 
+                `users`.`name`,
+                `surname`,
+                `fathername`,
                 `password`, 
-                `role` 
+                `roles`.`name` AS `role_name` 
             FROM 
-                `users` 
+                `users`
+            LEFT JOIN
+                `roles`
+            ON
+                `roles`.`id`=`users`.`role`
             WHERE 
                 `login` = '$login_inp'
         ";
@@ -26,9 +32,11 @@
             echo '<pre>';
             print_r($count);
             echo '</pre>';
-            $name       = $count['name'];
-            $password   = $count['password'];
-            $role       = $count['role'];
+            $name       =   $count['name'].' '.
+                            $count['fathername'].' '.
+                            $count['surname'];
+            $password   =   $count['password'];
+            $role       =   $count['role_name'];
         }
         if (strcmp($password,$password_inp)==0){
             $_SESSION['user_name']=$name;

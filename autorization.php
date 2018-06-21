@@ -8,8 +8,8 @@
     <body>
         <pre>
         <?php
-        		session_start();
-            print_r($_SESSION);
+        		//session_start();
+            //print_r($_SESSION);
         ?>
         </pre>
         <form action="autorization_model.php" method="get">

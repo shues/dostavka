@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<meta charset="utf-8">
+        <link href="style/main.css" rel="stylesheet" >
 	</head>
 	<body>
-		<div id="app"></div>
-		
-		<script type="text/javascript" src="react-0.14.3/build/react.js" ></script>
-		<script type="text/javascript" src="react-0.14.3/build/react-dom.js" ></script>
-		<script type="text/javascript" src="js/main.js" ></script>
+		<div id="user_cont_box">
+            <?php
+                session_start();
+                echo $_SESSION['user_role'];
+                echo ' <u>';
+                echo $_SESSION['user_name'];
+                echo '</u>';
+            ?>
+            <a class="exit" href="exit.php" >  Выход</a>
+        </div>
+        <?php
+            include($_SESSION['user_role'].'.php')
+        ?>
 	</body>
 </html>
