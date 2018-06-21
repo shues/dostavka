@@ -8,7 +8,7 @@
     <body>
         <pre>
         <?php
-        		//session_start();
+        		session_start();
             //print_r($_SESSION);
         ?>
         </pre>

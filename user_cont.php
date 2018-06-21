@@ -9,14 +9,15 @@
             <?php
                 session_start();
                 echo $_SESSION['user_role'];
-                echo ' <u>';
+                echo ' <b>';
                 echo $_SESSION['user_name'];
-                echo '</u>';
+                echo '</b>';
             ?>
             <a class="exit" href="exit.php" >  Выход</a>
         </div>
         <?php
             include($_SESSION['user_role'].'.php')
         ?>
+        
 	</body>
 </html>

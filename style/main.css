@@ -1,3 +1,9 @@
+body{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
 form{
     position: absolute;
     top: 40%;
@@ -26,11 +32,23 @@ input{
 #user_cont_box{
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    text-align: right;
+    background-color: gray;
+    color: white;
+    padding-right: 10px;
+}
+
+
+
+#user_cont_box a {
+	color: white;
 }
 
 .main_menu{
-    background-color: aquamarine;
+    background-color: gray;
     height: 300px;
     margin-top: 20px;
     display: inline-block;
@@ -38,8 +56,16 @@ input{
 }
 
 .main_menu_item{
-    background-color: aqua;
+    background-color: gray;
     height: 100px;
     line-height: 100px;
-    bottom: 10px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.main_menu_item:hover {
+	font-weight: bold; 
 }
