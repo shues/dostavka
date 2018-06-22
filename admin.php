@@ -10,5 +10,5 @@
     </div>
 </div>
 <script type="text/javascript" >
-	document.getElementsByClassName("main_menu")[0].style.height = (window.height - 10) + 'px';
+	document.getElementsByClassName("main_menu")[0].style.height = (window.innerHeight - 20) + 'px';
 </script>

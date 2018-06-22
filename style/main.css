@@ -32,6 +32,7 @@ input{
 #user_cont_box{
     position: absolute;
     top: 0;
+    height: 20px;
     right: 0;
     width: 100%;
     border-bottom: 1px solid gray;
