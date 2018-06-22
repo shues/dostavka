@@ -49,11 +49,12 @@ input{
 }
 
 .main_menu{
+	position: absolute;
     background-color: gray;
     height: 300px;
-    margin-top: 20px;
+    top: 20px;
     display: inline-block;
-    width: 10%;
+    width: 120px;
 }
 
 .main_menu_item{
@@ -70,3 +71,32 @@ input{
 .main_menu_item:hover {
 	font-weight: bold; 
 }
+
+table {
+	margin-top: 40px;
+	margin-left: 140px;
+	
+}
+
+table .number{
+	width: 50px;
+}
+
+table .name{
+	width: 250px;
+}
+
+table .name{
+	width: 250px;
+}
+
+
+table .phone{
+	width: 100px;
+}
+
+table .mail{
+	width: 100px;
+}
+
+

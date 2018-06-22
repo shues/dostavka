@@ -32,6 +32,7 @@ input{
 #user_cont_box{
     position: absolute;
     top: 0;
+    height: 20px;
     right: 0;
     width: 100%;
     border-bottom: 1px solid gray;
@@ -48,11 +49,12 @@ input{
 }
 
 .main_menu{
+	position: absolute;
     background-color: gray;
-    height: 700px;
-    margin-top: 20px;
+    height: 300px;
+    top: 20px;
     display: inline-block;
-    width: 10%;
+    width: 120px;
 }
 
 .main_menu_item{
@@ -69,3 +71,27 @@ input{
 .main_menu_item:hover {
 	font-weight: bold; 
 }
+
+table {
+	margin-top: 40px;
+	margin-left: 140px;
+	
+}
+
+table .number{
+	width: 50px;
+}
+
+table .name{
+	width: 250px;
+}
+
+table .phone{
+	width: 100px;
+}
+
+table .mail{
+	width: 100px;
+}
+
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Dostavka</title>
 		<meta charset="utf-8">
         <link href="style/main.css" rel="stylesheet" >
 	</head>
